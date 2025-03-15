@@ -340,6 +340,56 @@
 
      </script>
 
+     <!-- একটা ফাংশন বানাবি, যেটা কোনো সংখ্যা n পাবে, আর সেই সংখ্যা দ্বিগুণ করে রিটার্ন করবে, যদি n পটিজিভি হয়। যদি n নেগেটিভ হয়, তাহলে তিনগুণ করে রিটার্ন করবে। -->
+      <script>
+        function getResultDoubleOrThriple(n){
+            if(n > 0){
+                let doubleResult = n * 2;
+                return doubleResult;
+            } else {
+                let thripleResult = n * 3;
+                return thripleResult;
+            }
+        }
+        let resultOfFunction = getResultDoubleOrThriple(5);
+        console.log(resultOfFunction);
+      </script>
+
+      <!-- তুই এমন একটি ফাংশন লিখবি, যা দুইটা নাম নিবে, প্রথম নাম আর দ্বিতীয় নাম। যদি প্রথম নামের দৈর্ঘ্য দ্বিতীয় নামের দৈঘ্র্যের চেয়ে বেশি হয়, তাহলে true রিটার্ন করবে, না হলে false। -->
+       <script>
+        function getTrueOrFalse(name1, name2){
+            let name1Length = name1.length;
+                name2Length = name2.length;
+
+                if(name1Length > name2Length ){
+                    return true;
+                } else {
+                    return false;
+                }
+        }
+
+        let getResultTrueOrFalse = getTrueOrFalse('Linkon', 'Rafiq');
+        console.log(getResultTrueOrFalse);
+
+       </script>
+
+       <!-- তুই এমন একটা ফাংশন লিখ, যা দুইটি সংখ্যা নিবে এবং তাদের গুণফল রিটার্ন করবে। তবে, গুণফলল 100-এর বেশি হলে শুধু তার অর্ধেক রিটার্ন করবে। -->
+        <script>
+            function getHalfReturn(number1, number2){
+                let getMultification = number1 * number2;
+                if(getMultification > 100){
+                    getHalf = getMultification / 2;
+                    return getHalf;
+                } else {
+                    return getMultification;
+                }
+            }
+
+            let getFullResult = getHalfReturn(25, 8);
+            console.log(getFullResult);
+
+        </script>
+
 </body>
 
 </html>
