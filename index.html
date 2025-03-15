@@ -273,8 +273,8 @@
 
     <!-- একটা ফাংশন লিখ, যেটা চেক করবে, কোনো একটা সংখ্যা নেগেটিভ কি না। যদি নেগেটিভ (negative) না হয়, তাহলে সেটাকে -1 দিয়ে গুণ করে রেজাল্ট রিটার্ন করবে -->
     <script>
-        function getReturnPositiveValue(inputednUmber){
-            if(inputednUmber > 0) {
+        function getReturnPositiveValue(inputednUmber) {
+            if (inputednUmber > 0) {
                 let positiveNumber = inputednUmber *= -1;
                 return positiveNumber;
             }
@@ -284,6 +284,61 @@
 
     </script>
 
+    <!--  তোর দেওয়া array-এর মধ্যে যত উপাদান আছে, উপাদানের সংখ্যা জোড়ি নাকি বিজোড়, তা চেক কর। ফাংশন লিখে এটা করে দেখ। -->
+    <script>
+        function getOddEven(number) {
+            let size = number.length;
+            if (size % 2 === 1) {
+                console.log('Odd');
+            } else {
+                console.log('Even');
+            }
+        }
+        getOddEven([1, 2, 3, 5]);
+
+    </script>
+
+    <!-- ধর, তোকে এমন একটা ফাংশন বানাতে হবে, যেটাতে একটা নাম পাস করলে সেটার প্রথম অক্ষরটা রিটার্ন করবে। ধর, 'Raja' দিলে 'R' রিটার্ন করবে। -->
+    <script>
+        function getFirstLetter(name) {
+            let result = name.charAt(0);
+            return result;
+        }
+
+        let showFirstLetter = getFirstLetter('Raja');
+        console.log(showFirstLetter);
+    </script>
+
+
+    <!-- তুই একটা ফাংশন বানাবি, যেটাতে একটা সংখ্যা দিবি। ফাংশনটা চেক করবে, সংখ্যাটা 10-এর বড় কি না। বড় হলে 10 দিয়ে ভাগ করবে। আর 10-এর ছোট হলে 10 দিয়ে গুণ করবে। তারপর রেজাল্ট রিটার্ন করবে।  -->
+
+    <script>
+        function getResult2(number) {
+            if (number > 10) {
+                let getDividedResult = number / 10;
+                return getDividedResult;
+            } else {
+                let getMultipleResult = number * 10;
+                return getMultipleResult;
+            }
+        }
+
+        let getResultDividedOrMultiple = getResult2(9);
+        console.log(getResultDividedOrMultiple);
+    </script>
+
+    <!-- একটা ফাংশন বানা, যেটা একটা array নিবে এবং array-এর প্রথম এবং দ্বিতীয় উপাদান যোগ করে যোগফল রিটার্ন করবে।-->
+     <script>
+        function getTwoArraysSum (arr){
+            let array1 = arr[0];
+            let array2 = arr[1];
+            let sumOfArray = array1 + array2;
+            return sumOfArray;
+        }
+        let getTwoArrasSumOfResult = getTwoArraysSum([12, 20, 3]);
+        console.log(getTwoArrasSumOfResult);
+
+     </script>
 
 </body>
 
