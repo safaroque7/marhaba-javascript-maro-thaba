@@ -390,6 +390,23 @@
 
         </script>
 
+        <!-- তোর এক বন্ধুর কাছে কিছু নাম্বার আছে: [5, 15, 8, 7]। ওর চাওয়া অনুযায়ী ‍শুধু বিজোড় সংখ্যাগুলোর যোগফল বের করে দে। এই কাজের জন্য একটা ফাংশন লিখে ফলাফলটা রিটার্ন কর। -->
+         <script>
+            function getSumOfEvenNumbers(evenNumbers){
+                let sumResult = 0;
+                for(const evenNumber of evenNumbers){
+                    if(evenNumber % 2 === 1){
+                        sumResult = sumResult + evenNumber;
+                    }
+                }
+                return sumResult;
+            }
+            const someNumbers = [5, 15, 8, 7];
+            const showResultOfEvenNumbers = getSumOfEvenNumbers(someNumbers);
+            console.log('The result of ' + showResultOfEvenNumbers);
+         </script>
+
+
 </body>
 
 </html>
