@@ -328,8 +328,8 @@
     </script>
 
     <!-- একটা ফাংশন বানা, যেটা একটা array নিবে এবং array-এর প্রথম এবং দ্বিতীয় উপাদান যোগ করে যোগফল রিটার্ন করবে।-->
-     <script>
-        function getTwoArraysSum (arr){
+    <script>
+        function getTwoArraysSum(arr) {
             let array1 = arr[0];
             let array2 = arr[1];
             let sumOfArray = array1 + array2;
@@ -338,12 +338,12 @@
         let getTwoArrasSumOfResult = getTwoArraysSum([12, 20, 3]);
         console.log(getTwoArrasSumOfResult);
 
-     </script>
+    </script>
 
-     <!-- একটা ফাংশন বানাবি, যেটা কোনো সংখ্যা n পাবে, আর সেই সংখ্যা দ্বিগুণ করে রিটার্ন করবে, যদি n পটিজিভি হয়। যদি n নেগেটিভ হয়, তাহলে তিনগুণ করে রিটার্ন করবে। -->
-      <script>
-        function getResultDoubleOrThriple(n){
-            if(n > 0){
+    <!-- একটা ফাংশন বানাবি, যেটা কোনো সংখ্যা n পাবে, আর সেই সংখ্যা দ্বিগুণ করে রিটার্ন করবে, যদি n পটিজিভি হয়। যদি n নেগেটিভ হয়, তাহলে তিনগুণ করে রিটার্ন করবে। -->
+    <script>
+        function getResultDoubleOrThriple(n) {
+            if (n > 0) {
                 let doubleResult = n * 2;
                 return doubleResult;
             } else {
@@ -353,59 +353,166 @@
         }
         let resultOfFunction = getResultDoubleOrThriple(5);
         console.log(resultOfFunction);
-      </script>
+    </script>
 
-      <!-- তুই এমন একটি ফাংশন লিখবি, যা দুইটা নাম নিবে, প্রথম নাম আর দ্বিতীয় নাম। যদি প্রথম নামের দৈর্ঘ্য দ্বিতীয় নামের দৈঘ্র্যের চেয়ে বেশি হয়, তাহলে true রিটার্ন করবে, না হলে false। -->
-       <script>
-        function getTrueOrFalse(name1, name2){
+    <!-- তুই এমন একটি ফাংশন লিখবি, যা দুইটা নাম নিবে, প্রথম নাম আর দ্বিতীয় নাম। যদি প্রথম নামের দৈর্ঘ্য দ্বিতীয় নামের দৈঘ্র্যের চেয়ে বেশি হয়, তাহলে true রিটার্ন করবে, না হলে false। -->
+    <script>
+        function getTrueOrFalse(name1, name2) {
             let name1Length = name1.length;
-                name2Length = name2.length;
+            name2Length = name2.length;
 
-                if(name1Length > name2Length ){
-                    return true;
-                } else {
-                    return false;
-                }
+            if (name1Length > name2Length) {
+                return true;
+            } else {
+                return false;
+            }
         }
 
         let getResultTrueOrFalse = getTrueOrFalse('Linkon', 'Rafiq');
         console.log(getResultTrueOrFalse);
 
-       </script>
+    </script>
 
-       <!-- তুই এমন একটা ফাংশন লিখ, যা দুইটি সংখ্যা নিবে এবং তাদের গুণফল রিটার্ন করবে। তবে, গুণফলল 100-এর বেশি হলে শুধু তার অর্ধেক রিটার্ন করবে। -->
-        <script>
-            function getHalfReturn(number1, number2){
-                let getMultification = number1 * number2;
-                if(getMultification > 100){
-                    getHalf = getMultification / 2;
-                    return getHalf;
-                } else {
-                    return getMultification;
+    <!-- তুই এমন একটা ফাংশন লিখ, যা দুইটি সংখ্যা নিবে এবং তাদের গুণফল রিটার্ন করবে। তবে, গুণফলল 100-এর বেশি হলে শুধু তার অর্ধেক রিটার্ন করবে। -->
+    <script>
+        function getHalfReturn(number1, number2) {
+            let getMultification = number1 * number2;
+            if (getMultification > 100) {
+                getHalf = getMultification / 2;
+                return getHalf;
+            } else {
+                return getMultification;
+            }
+        }
+
+        let getFullResult = getHalfReturn(25, 8);
+        console.log(getFullResult);
+
+    </script>
+
+    <!-- তোর এক বন্ধুর কাছে কিছু নাম্বার আছে: [5, 15, 8, 7]। ওর চাওয়া অনুযায়ী ‍শুধু বিজোড় সংখ্যাগুলোর যোগফল বের করে দে। এই কাজের জন্য একটা ফাংশন লিখে ফলাফলটা রিটার্ন কর। -->
+    <script>
+        function getSumOfEvenNumbers(evenNumbers) {
+            let sumResult = 0;
+            for (const evenNumber of evenNumbers) {
+                if (evenNumber % 2 === 1) {
+                    sumResult = sumResult + evenNumber;
+                }
+            }
+            return sumResult;
+        }
+        const someNumbers = [5, 15, 8, 7];
+        const showResultOfEvenNumbers = getSumOfEvenNumbers(someNumbers);
+        console.log('The result of ' + showResultOfEvenNumbers);
+    </script>
+
+
+    <!--  একটা ফাংশন লেখ, যেটা array-এর প্রথম দুইটা উপাদানের মধ্যে যেটা ছোট সেটাকে রিটার্ন করবে। উপদাহরণস্বরূপ, তুই যদি [20, 45, 78] পাঠাস, ফাংশন 20 রিটার্ন করবে। -->
+    <script>
+        function getSmallerNumer(threeNumbers) {
+            let firstNumber = threeNumbers[0];
+            let secondNumber = threeNumbers[1];
+
+            if (firstNumber < secondNumber) {
+                return firstNumber;
+            } else {
+                return secondNumber;
+            }
+        }
+
+        const getSmallerResult = getSmallerNumer([20, 15, 78]);
+        console.log(getSmallerResult);
+
+    </script>
+
+
+    <!-- তুই তোর বয়স একটু লুকিয়ে-চুপিয়ে দেখাতে চাস। ধর, তোর বয়স 18-এর কম হলে তুই রিটার্ন 18, আবার 45-এর বেশি হলে তুই বলবি 45, আর এই দুইটার মাঝখানে কোনো সংখ্যা হলে সরাসরি সেই সংখ্যাটা রিটার্ন করে পাঠিয়ে দিবি। এমন একটা ফাংশন লিখ। -->
+
+    <script>
+        function getYourAgeUsingFunction(yourAge) {
+
+            if (yourAge < 18) {
+                return 18;
+            } else if (yourAge > 45) {
+                return 45;
+            } else {
+                return yourAge;
+            }
+
+        }
+
+        const getFinalAge = getYourAgeUsingFunction(15);
+        console.log(getFinalAge);
+    </script>
+
+    <!-- তোর এক বন্ধুর কাছে একটা array আছে, যেমন [2, 4, 5, 7, 8, 32, 45]। এখন এমন একটা ফাংশন তৈরি কর, যেটা শুধু array-এর 4 দিয়ে ভাগ যায়, এমন সংখ্যাগুলোর যোগফল দেখাবে। -->
+
+    <script>
+        function getSumWhichIsDividedByFour(friendsNumbers) {
+            let sumWithFour = 0;
+            for (const friendsNumber of friendsNumbers) {
+                if (friendsNumber % 4 === 0) {
+                    sumWithFour = sumWithFour + friendsNumber;
+                }
+            }
+            return sumWithFour;
+        }
+
+        const getSumWhichIsDividedByFourResult = getSumWhichIsDividedByFour([2, 4, 5, 7, 8, 32, 45, 6, 8]);
+        console.log(getSumWhichIsDividedByFourResult);
+
+    </script>
+
+    <!-- একটা ফাংশন লিখ, যা একটা নাম্বার নিবে এবং সেটি যদি 20-এর কম হয়, তবে নাম্বারটিকে দ্বিগুণ করবে, না হলে 20 দিয়ে ভাগ করবে। -->
+    <script>
+        function getDoubleIfUnder20(inputNumber) {
+            if (inputNumber < 20) {
+                let doubleResultOutput = inputNumber * 2;
+                return doubleResultOutput;
+            } else {
+                let resultByDividedBy20 = inputNumber / 20;
+                return resultByDividedBy20;
+            }
+        }
+
+        const getRealResult = getDoubleIfUnder20(19);
+        console.log(getRealResult);
+
+    </script>
+
+    <!-- এমন একটি ফাংশন লিখ, যা array-এর মধ্যে শুধু নেগেটিভ সংখ্যাগুলোর যোগফল রিটার্ন করবে। -->
+    <script>
+        function getSumOfNegativeNumbers(negativeAndPositiveNumbers) {
+            let negSum = 0;
+            for (const negativeAndPositiveNumber of negativeAndPositiveNumbers) {
+                if (negativeAndPositiveNumber < 0) {
+                    negSum = negSum + negativeAndPositiveNumber;
                 }
             }
 
-            let getFullResult = getHalfReturn(25, 8);
-            console.log(getFullResult);
+            return negSum;
+        }
 
-        </script>
+        const getNegativeNumbersSum = getSumOfNegativeNumbers([10, -5, -8, 54, -9]);
+        console.log(getNegativeNumbersSum);
 
-        <!-- তোর এক বন্ধুর কাছে কিছু নাম্বার আছে: [5, 15, 8, 7]। ওর চাওয়া অনুযায়ী ‍শুধু বিজোড় সংখ্যাগুলোর যোগফল বের করে দে। এই কাজের জন্য একটা ফাংশন লিখে ফলাফলটা রিটার্ন কর। -->
-         <script>
-            function getSumOfEvenNumbers(evenNumbers){
-                let sumResult = 0;
-                for(const evenNumber of evenNumbers){
-                    if(evenNumber % 2 === 1){
-                        sumResult = sumResult + evenNumber;
-                    }
+    </script>
+
+    <!-- একটা ফাংশন লিখ, যা একটা array নিবে এবং array-এর মধ্যে যে সংখ্যাগুলো 3 দিয়ে ভাগ যায়, তাদের গুণফল রিটার্ন করবি। -->
+    <script>
+        function getMultificationResult(arrayData) {
+            let multiSum = 0;
+            for (const arrayDatum of arrayData) {
+                if (arrayDatum % 3 === 0) {
+                    multiSum = multiSum + arrayDatum;
                 }
-                return sumResult;
             }
-            const someNumbers = [5, 15, 8, 7];
-            const showResultOfEvenNumbers = getSumOfEvenNumbers(someNumbers);
-            console.log('The result of ' + showResultOfEvenNumbers);
-         </script>
+            return multiSum;
+        }
 
+        const getResultOfMultificable = getMultificationResult([5, 6, 7, 8, 10, 8, 9, 38]);
+        console.log(getResultOfMultificable);
+    </script>
 
 </body>
 
