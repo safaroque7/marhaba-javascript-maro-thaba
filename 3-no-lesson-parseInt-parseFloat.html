@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Lesson 3 | let const | Marhaba, Javascript Maro Thaba </title>
+</head>
+
+<body>
+  
+<!-- ১. ধর তুই একটা মজার অঙ্ক করছিস। তুই '20' লিখে ফেললি, কিন্তু সেটা স্ট্রিং আকারে। স্ট্রিং থেকে আসল সংখ্যায় কনভার্ট করে তার সাথে 10 যোগ করতে পারবি? -->
+<script>
+  let mojarDigit = '20';
+  mojarDigit = parseInt(mojarDigit);
+  const sum = mojarDigit + 10;
+  console.log(sum);
+</script>
+
+<!-- ২. তোর কাছে একটা ভগ্নাংশ আকারে মান আছে, যেমন- '3.14159'। এই মানটা পূর্ণসংখ্যায় রূপান্তর করার জন্য একটা প্রোগ্রাম লিখ। -->
+ <script>
+  let oneValue = 3.14159;
+  oneValue = parseInt(oneValue);
+  console.log(oneValue);
+ </script>
+
+ <!-- ৩. তুই 'premikBoy' নামের একটা স্ট্রিংককে সংখ্যা বানানোর চেষ্টা কর। দেখ কী আউটপুট দেয়। -->
+  <script>
+    let stringOne = 'premikBoy';
+    stringOne = parseInt(stringOne);
+    console.log(stringOne);
+  </script>
+
+  <!-- ৪. তুই 3.456 আর 2.789 যোগ করলি। আউটপুটে তুই দশমিকের পর মাত্র 2 ঘর পর্যন্ত দেখতে চাস। কীভাবে দেখাবি? একটা প্রোগ্রাম লিখ। -->
+   <script>
+    let string1 = 3.456;
+        string2 = 2.799;
+        sumOfTwoString = string1 + string2;
+        twoDigistResutl = parseFloat(sumOfTwoString.toFixed(2));
+        console.log(twoDigistResutl);
+   </script>
+
+   <!-- ৫. ধর, তুই '56.78' আর '12.34' স্ট্রিং আকারে পাইলি। এখন এই দুইটা যোগ করে কীভাবে আসল সংখ্যা বের করবি? সেটা বের করার একটা প্রোগ্রাম লিখ।  -->
+    <script>
+      let stringNumberOne = '56.78';
+       stringNumberTwo = '12.34';
+       stringNumberOne = parseInt(stringNumberOne);
+       stringNumberTwo = parseInt(stringNumberTwo);
+
+       const stringNumbersSum = stringNumberOne +  stringNumberTwo;
+       console.log(stringNumbersSum);
+    </script>
+
+    <!-- ৬. ধর, তোর কাছে '10.5678' আর '5.4321' আছে। তুই আউটপুটে দশমিকের পর 1 ঘর পর্যন্ত দেখতে চাস। সেটা কীভাবে দেখাবি? -->
+     <script>
+      let sOne = '10.5678';
+      sTwo = '5.4321';
+      
+      sOne = parseInt(sOne);
+      sTwo = parseInt(sTwo);
+
+      twoStringSum = parseFloat(sOne.toFixed(1)) + parseFloat(sTwo.toFixed(1));
+      // twoStringSum = twoStringSum;
+      // twoStringSum = parseInt(twoStringSum);
+      console.log(twoStringSum);
+     </script>
+
+     <!-- ৭. এখন '42.45678754'-কে দশমিকের পর 3 ঘর পর্যন্ত রাউন্ড কর। -->
+      <script>
+        let firstInt = '42.45678754';
+        firstInt = parseFloat(firstInt);
+        firstInt = firstInt.toFixed(3);
+        console.log(firstInt);
+        
+      </script>
+
+
+</body>
+
+</html>
