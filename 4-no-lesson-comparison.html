@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Lesson 3 | let const | Marhaba, Javascript Maro Thaba </title>
+</head>
+
+<body>
+  
+<!-- ১. তুই আর তোর ছোট ভাইয়ের মধ্যে খাবার কে বেশি খেয়েছে, সেটা তুলনা করবি। তুই 7টা স্যান্ডউইচ খেয়েছিস, আর তোর ছোট ভাই 5টা খেয়েছে। একটা প্রোগ্রাম লিখেথ দেখ, কে বেশি খেয়েছে।-->
+ <script>
+  let meTake = 7;
+  myBrothereTakes = 3;
+  if(meTake > myBrothereTakes ) {
+    console.log('I took more than my younger brothere;');
+  } else {
+    console.log('My younger brother took more than me.');
+  }
+ </script>
+
+ <!-- ২. তোর ক্লাসে 45 জন ছাত্র আছে, আর পাশের ক্লাসে 50 জন। একটা প্রোগ্রাম লিখে দেখ, কোন ক্লাসে বেশি ছাত্র আছে। -->
+  <script>
+    let myClass = 45;
+    besideClass = 50;
+
+    if(myClass > besideClass){
+      console.log('My class has more students than beside class;');
+    } else {
+      console.log('There are more students more than my class.');
+    }
+  </script>
+
+  <!-- ৩. তুই আর তোর বন্ধু পরীক্ষায় নাম্বার পেয়েছিস। তুই 75 পেয়েছিস, আর তোর বন্ধু পেয়েছে 25। একটা প্রোগ্রাম লিখে চেক কর, তোর আর তোর বন্ধুর নাম্বার সমান কি না। -->
+   <script>
+    let myNumber = 75;
+    myFriendsNumber = 25;
+
+    if(myNumber != myFriendsNumber ){
+      console.log('My friend and I numbers are not equal;');
+    }
+   </script>
+
+   <!-- ৪. তুই 100 টাকা জমানোর টার্গেট করেছিস। এখন পর্যন্ত 95 টাকা জমাইছিস। একটা প্রোগ্রাম লিখে চেক কর, তুই টার্গেটে পৌঁছাইছিস কি না বা তার চেয়ে বেশি জমাইছিস কি না। -->
+    <script>
+      let mySavingsTarget = 100;
+      savedAmount = 95;
+
+      if( mySavingsTarget < savedAmount ){
+        console.log('Your saving target is over.');
+      } else if( mySavingsTarget != savedAmount ){
+        console.log('Your saving targent has not been reached.');
+        
+      }
+    </script>
+
+    <!-- ৫. একটা প্রোগ্রাম লিখে দেখ, 10 এবং 70 কি অ-সমান। -->
+     <script>
+      let numberOne = 10;
+      numberTwo = 70;
+
+      if(numberOne != numberTwo){
+        console.log(numberOne + ' is not equal of ' + numberTwo + '. They are different');
+      }
+     </script>
+
+     <!-- ৬. 20 কি 15-এর চাইতে কম বা সমান কি না, সেটা চেক কর।  -->
+      <script>
+        let number1 = 20;
+        number2 = 15;
+
+        if(number1 < number2 )
+        {
+          console.log(number1 + ' is smaller than ' + number2 );
+        } else if(number1 === number2 )
+        {
+          console.log(number1 + ' is equal to ' + number2 );
+        }else
+        {
+          console.log(number1 + ' is greater than ' + number2 );
+        }
+      </script>
+
+<!-- ৭. তুই আর তোর বন্ধু একই সাথে পরীক্ষা দিছস। পরীক্ষা দেয়ার পর তোর বন্ধু কেঁদে কেঁদে বুক ভাসিয়ে ফেলছে। তার পরীক্ষা জঘন্য হইছে, সে ফেল করবে। এক মাস পরে রেজাল্টে দেখা গেছে, তুই পাইছস 45 নাম্বার আর বন্ধু পাইছে 97 নাম্বার। এইবার চেক করে দেখ, তোর বন্ধু কি তোর চাইতে কম পাইছে কি না। -->
+
+<script>
+  let myNumberInExam = 45;
+  myFriendsNumberInEdam = 97;
+
+  if(myNumberInExam > myFriendsNumberInEdam ){
+    console.log('I got more number than my friend');
+  } else {
+    console.log('My friend got more number than me.');
+    
+  }
+</script>
+
+</body>
+
+</html>
