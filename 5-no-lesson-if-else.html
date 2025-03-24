@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Lesson 3 | let const | Marhaba, Javascript Maro Thaba </title>
+</head>
+
+<body>
+  
+<!-- ১. তুই নিজের দোকান খুলছিস। তোর দোকানে কেউ 3000 টাকার বেশি কেনাকাটা করলে 5% ডিসকাউন্ট, আর 6000 টাকার বেশি কেনাকাটা করলে 15% ডিসকাউন্ট দিবি। যদি এক বন্ধু এসে 4500 টাকার জেনিসি কিনে, তবে তাকে কত টাকা দিতে হবে? -->
+ <script>
+  let price = 3000;
+  if(price >= 3000){
+    discount = price/100*10;
+    pay = price - discount;
+    console.log(pay);
+  }else if(price >= 6000 ){
+    discount = price/100*15;
+    pay = price - discount;
+    console.log(pay);
+  } else {
+    console.log(price);
+    
+  }
+ </script>
+
+ <!-- ২. তুই একটা রেস্টুরেন্ট চালাচ্ছস, সেখানে 12 বছরের নিচে বাচ্চাদের ফ্রি খাওয়ানো হয় এবং 50 বছরের ওপরের মানুষকে 50% ডিসকাউন্ট দেওয়া হয়, বাকিদের পুরা টাকা দিতে হয়। -->
+  <script>
+    let age = 49;
+    bill = 250;
+    if(age <= 12 ){
+      console.log('Free Food');
+    } else if(age >= 50 ){
+      discountHere = bill/100*50
+      totalPay = bill - discountHere
+      console.log(totalPay);
+    } else {
+      console.log(bill);
+    }
+  </script>
+
+</body>
+
+</html>
