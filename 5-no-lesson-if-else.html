@@ -65,10 +65,44 @@
     console.log("Pass");
   }else if (marks >= 80){
     console.log("A+");
-    
   }
  </script>
 
+<!-- ৫. কোনো বইয়ের পৃষ্ঠা সংখ্যা 100-এর কম হলে বলবি "Small book", 100 থেকে 500-এর মধ্যে হলে আপনি "Mid-size book". আর 500-এর বেশি হলে বলবি "heart-attack size book"। -->
+ <script>
+  let bookPages = 100;
+  if( bookPages < 100 ){
+    console.log('Small Book');
+  }else if( bookPages >= 100 && bookPages <= 500 ){
+    console.log("Mid-size book");
+  }else{
+    console.log("heart-attack size book");
+  }
+ </script>
+
+ <!-- ৬. একটা প্রোগ্রাম লিখ। যা চেক করবে, তাপমাত্রা 0 ডিগ্রির কম হলে বলবে 'Ice', 0 থেকে 20-এর মধ্যে হলে বলবে 'Cool Cool'. আর 20-এর বেশি হলে বলবে "Hot Hot"। -->
+  <script>
+    let temperature = 20;
+    if(temperature < 0 ){
+      console.log("Ice");
+    }else if(temperature >=0 && temperature <=20 ){
+      console.log("Cool Cool");
+    }else {
+      console.log("Hot Hot");
+    }
+  </script>
+
+  <!--তোর একটা গেমিং অ্যাপ আছে। প্লেয়ারের লেবেল 10-এর কম হলে বলবি 'novice'. 10 থেকে 50-এর মধ্যে হলে বলবি "Expert". আর 50-এর বেশি হলে বলবি "Pro Gamer" -->
+  <script>
+    let playerLavel = 51;
+    if(playerLavel < 10 ){
+      console.log("novice");
+    }else if(playerLavel >= 10 && playerLavel <= 50){
+      console.log("Expert");
+    }else {
+      console.log("Pro Gamer");
+    }
+  </script>
 
 
 
