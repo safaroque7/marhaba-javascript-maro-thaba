@@ -1,111 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 3 | let const | Marhaba, Javascript Maro Thaba</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Lesson 3 | let const | Marhaba, Javascript Maro Thaba </title>
-</head>
+  <body>
+    <!-- ১. তুই নিজের দোকান খুলছিস। তোর দোকানে কেউ 3000 টাকার বেশি কেনাকাটা করলে 5% ডিসকাউন্ট, আর 6000 টাকার বেশি কেনাকাটা করলে 15% ডিসকাউন্ট দিবি। যদি এক বন্ধু এসে 4500 টাকার জেনিসি কিনে, তবে তাকে কত টাকা দিতে হবে? -->
+    <script>
+      let price = 3000;
+      if (price >= 3000) {
+        discount = (price / 100) * 10;
+        pay = price - discount;
+        console.log(pay);
+      } else if (price >= 6000) {
+        discount = (price / 100) * 15;
+        pay = price - discount;
+        console.log(pay);
+      } else {
+        console.log(price);
+      }
+    </script>
 
-<body>
+    <!-- ২. তুই একটা রেস্টুরেন্ট চালাচ্ছস, সেখানে 12 বছরের নিচে বাচ্চাদের ফ্রি খাওয়ানো হয় এবং 50 বছরের ওপরের মানুষকে 50% ডিসকাউন্ট দেওয়া হয়, বাকিদের পুরা টাকা দিতে হয়। -->
+    <script>
+      let age = 49;
+      bill = 250;
+      if (age <= 12) {
+        console.log("Free Food");
+      } else if (age >= 50) {
+        discountHere = (bill / 100) * 50;
+        totalPay = bill - discountHere;
+        console.log(totalPay);
+      } else {
+        console.log(bill);
+      }
+    </script>
 
-  <!-- ১. তুই নিজের দোকান খুলছিস। তোর দোকানে কেউ 3000 টাকার বেশি কেনাকাটা করলে 5% ডিসকাউন্ট, আর 6000 টাকার বেশি কেনাকাটা করলে 15% ডিসকাউন্ট দিবি। যদি এক বন্ধু এসে 4500 টাকার জেনিসি কিনে, তবে তাকে কত টাকা দিতে হবে? -->
-  <script>
-    let price = 3000;
-    if (price >= 3000) {
-      discount = price / 100 * 10;
-      pay = price - discount;
-      console.log(pay);
-    } else if (price >= 6000) {
-      discount = price / 100 * 15;
-      pay = price - discount;
-      console.log(pay);
-    } else {
-      console.log(price);
+    <!-- ৩. যদি কারো ব্যাংক অ্যাকাউন্টে ব্যালেন্স 1000 টাকার কম হয়, তাহলে বলবি, “ডিপোজিট কর”। 1000 থেকে 5000-এর মধ্যে হলে বলবি, ‘বিন্দাস লাইফ এনজয় কর।” আর 5000-এর বেশি হলে বলবি, “তুই ধনী, আমাকে বিয়া কর” -->
 
-    }
-  </script>
+    <script>
+      const bankBalance = 9000;
+      if (bankBalance < 1000) {
+        console.log("Diposit money");
+      } else if (bankBalance <= 5000) {
+        console.log("Enjoy your bindas life");
+      } else if (bankBalance > 5000) {
+        console.log("You are rich, you marry me.");
+      }
+    </script>
 
-  <!-- ২. তুই একটা রেস্টুরেন্ট চালাচ্ছস, সেখানে 12 বছরের নিচে বাচ্চাদের ফ্রি খাওয়ানো হয় এবং 50 বছরের ওপরের মানুষকে 50% ডিসকাউন্ট দেওয়া হয়, বাকিদের পুরা টাকা দিতে হয়। -->
-  <script>
-    let age = 49;
-    bill = 250;
-    if (age <= 12) {
-      console.log('Free Food');
-    } else if (age >= 50) {
-      discountHere = bill / 100 * 50
-      totalPay = bill - discountHere
-      console.log(totalPay);
-    } else {
-      console.log(bill);
-    }
-  </script>
+    <!-- ৪. একটা পরীক্ষায় যদি ছাত্রের মার্কস 50-এর কম হলে বলবি, "Fall", 50 থেকে 80 এর মধ্যে হলে বলবি "Pass". আর 80-এর বেশি হলে বলবি 'A+'। -->
+    <script>
+      let marks = 65;
+      if (marks < 50) {
+        console.log("Fall");
+      } else if (marks < 80) {
+        console.log("Pass");
+      } else if (marks >= 80) {
+        console.log("A+");
+      }
+    </script>
 
-  <!-- ৩. যদি কারো ব্যাংক অ্যাকাউন্টে ব্যালেন্স 1000 টাকার কম হয়, তাহলে বলবি, “ডিপোজিট কর”। 1000 থেকে 5000-এর মধ্যে হলে বলবি, ‘বিন্দাস লাইফ এনজয় কর।” আর 5000-এর বেশি হলে বলবি, “তুই ধনী, আমাকে বিয়া কর” -->
+    <!-- ৫. কোনো বইয়ের পৃষ্ঠা সংখ্যা 100-এর কম হলে বলবি "Small book", 100 থেকে 500-এর মধ্যে হলে আপনি "Mid-size book". আর 500-এর বেশি হলে বলবি "heart-attack size book"। -->
+    <script>
+      let bookPages = 100;
+      if (bookPages < 100) {
+        console.log("Small Book");
+      } else if (bookPages >= 100 && bookPages <= 500) {
+        console.log("Mid-size book");
+      } else {
+        console.log("heart-attack size book");
+      }
+    </script>
 
-  <script>
-    const bankBalance = 9000;
-    if (bankBalance < 1000) {
-      console.log("Diposit money");
-    }
-    else if (bankBalance <= 5000) {
-      console.log("Enjoy your bindas life");
-    } else if( bankBalance > 5000 ){
-      console.log("You are rich, you marry me.");
-    }
+    <!-- ৬. একটা প্রোগ্রাম লিখ। যা চেক করবে, তাপমাত্রা 0 ডিগ্রির কম হলে বলবে 'Ice', 0 থেকে 20-এর মধ্যে হলে বলবে 'Cool Cool'. আর 20-এর বেশি হলে বলবে "Hot Hot"। -->
+    <script>
+      let temperature = 20;
+      if (temperature < 0) {
+        console.log("Ice");
+      } else if (temperature >= 0 && temperature <= 20) {
+        console.log("Cool Cool");
+      } else {
+        console.log("Hot Hot");
+      }
+    </script>
 
-  </script>
+    <!--৭. তোর একটা গেমিং অ্যাপ আছে। প্লেয়ারের লেবেল 10-এর কম হলে বলবি 'novice'. 10 থেকে 50-এর মধ্যে হলে বলবি "Expert". আর 50-এর বেশি হলে বলবি "Pro Gamer" -->
+    <script>
+      let playerLavel = 51;
+      if (playerLavel < 10) {
+        console.log("novice");
+      } else if (playerLavel >= 10 && playerLavel <= 50) {
+        console.log("Expert");
+      } else {
+        console.log("Pro Gamer");
+      }
+    </script>
 
-<!-- ৪. একটা পরীক্ষায় যদি ছাত্রের মার্কস 50-এর কম হলে বলবি, "Fall", 50 থেকে 80 এর মধ্যে হলে বলবি "Pass". আর 80-এর বেশি হলে বলবি 'A+'। -->
- <script>
-  let marks = 65;
-  if( marks < 50 ){
-    console.log("Fall");
-  }else if( marks < 80 ){
-    console.log("Pass");
-  }else if (marks >= 80){
-    console.log("A+");
-  }
- </script>
+    <!-- ১. বন্ধু যদি দাওয়াত দেয়, তাহলে তার জন্মদিনের পার্টিতে তুই যাবি। আর যদি তোকে দাওয়াত না দেয়, তাহলে তাকে ফ্রেন্ডলিস্ট থেকে বের করে দিবি। আর যদি বন্ধু দাওয়াত দিয়ে ফেলে, তাহলে দাওয়াতে যাওয়ার সময় চেক করে দেখবি, পকেটে কত টাকা আছে। যদি 1000 টাকার বেশি থাকে, তাহলে বন্ধুর জন্য একটা গিফট নিয়ে যাবি। না হয় খালি হাতে যাবি। -->
+    <script>
+      let isInvited = true;
+      pocketMoney = 1001;
+      if (isInvited === true) {
+        console.log("I will go to friends's party");
+        if (pocketMoney > 1000) {
+          console.log("I will buy a gift for my friend.");
+        }
+      } else {
+        console.log("I will unfriend him.");
+      }
+    </script>
 
-<!-- ৫. কোনো বইয়ের পৃষ্ঠা সংখ্যা 100-এর কম হলে বলবি "Small book", 100 থেকে 500-এর মধ্যে হলে আপনি "Mid-size book". আর 500-এর বেশি হলে বলবি "heart-attack size book"। -->
- <script>
-  let bookPages = 100;
-  if( bookPages < 100 ){
-    console.log('Small Book');
-  }else if( bookPages >= 100 && bookPages <= 500 ){
-    console.log("Mid-size book");
-  }else{
-    console.log("heart-attack size book");
-  }
- </script>
+    <!-- যদি তোর বাসায় মেহমান আসে, প্রথমে জিজ্ঞেস করবি, তারা চা খাবে কিনা। যদি চা খেতে চায়, তাহলে জিজ্ঞেস করবি, সাথে বিস্কুট খাবে কি না। না চাইলে বলবি, ‘শুধু চা রেডি।’ আর যদি চা-ও না খেতে চায়, বলবি ‘বসে বসে স্টার জলসা দেখুন।’ -->
 
- <!-- ৬. একটা প্রোগ্রাম লিখ। যা চেক করবে, তাপমাত্রা 0 ডিগ্রির কম হলে বলবে 'Ice', 0 থেকে 20-এর মধ্যে হলে বলবে 'Cool Cool'. আর 20-এর বেশি হলে বলবে "Hot Hot"। -->
-  <script>
-    let temperature = 20;
-    if(temperature < 0 ){
-      console.log("Ice");
-    }else if(temperature >=0 && temperature <=20 ){
-      console.log("Cool Cool");
-    }else {
-      console.log("Hot Hot");
-    }
-  </script>
+    <script>
+      let isGuest = true;
+      isTakenTea = true;
+      isBiscuiteAllow = true;
+      if (isGuest === true) {
+        if (isTakenTea === true) {
+          if (isBiscuiteAllow === true) {
+            console.log("Only tea is ready.");
+          } else {
+            console.log("You watch Star Jolsha setting.");
+          }
+        }
+      }
+    </script>
 
-  <!--তোর একটা গেমিং অ্যাপ আছে। প্লেয়ারের লেবেল 10-এর কম হলে বলবি 'novice'. 10 থেকে 50-এর মধ্যে হলে বলবি "Expert". আর 50-এর বেশি হলে বলবি "Pro Gamer" -->
-  <script>
-    let playerLavel = 51;
-    if(playerLavel < 10 ){
-      console.log("novice");
-    }else if(playerLavel >= 10 && playerLavel <= 50){
-      console.log("Expert");
-    }else {
-      console.log("Pro Gamer");
-    }
-  </script>
+    <!-- তুই একটা অ্যাপ বানিয়েছিস। প্রথমে চেক করবি, ব্যবহারকারীর অ্যাকাউন্ট অ্যাকটিভ কি না। যদি অ্যাকটিভ হয়, তার সাবক্রিপশন চেক করবি। যদি প্রিমিয়াম হয়, তাকে প্রিমিয়াম ফিচার দেখাবি। না হলে বলবি, ‘ফ্রি ভার্সন দেখুন।’ -->
+    <script>
+      let isActive = true;
+      subscription = false;
+      if (isActive === true) {
+        if (subscription === true) {
+          console.log("You watch premium features.");
+        } else {
+          console.log("You wach free version.");
+        }
+      }
+    </script>
 
+    <!-- তোর বাসার ফ্রিজে খাবার আছে কি না, চেক করবি। যদি থাকে, খাবার গরম করবি। আর যদি না থাকে, চেক করবি, ফুড ডেলিভারি অ্যাপ কাজ করছে কি না। কাজ করলে অর্ডার করবি, না হলে বলবি, ‘আজকে আমি রোজা।’  -->
 
-
-</body>
-
+    <script>
+      let isFood = false;
+      foodDeliveryApp = true;
+      if (isFood === true) {
+        console.log("I will hot food.");
+      } else if (foodDeliveryApp === false) {
+        console.log("I will order food by using food delivery app.");
+      } else {
+        console.log("Today, I am pasting.");
+      }
+    </script>
+  </body>
 </html>
