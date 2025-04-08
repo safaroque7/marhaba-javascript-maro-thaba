@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 6 | array | Marhaba, Javascript Maro Thaba</title>
+  </head>
+
+  <body>
+    <!-- তুই 5টা সাবজেক্টের নাম লেখ। তারপর প্রোগ্রাম লিখে দেখ, কীভাবে লুপ ব্যবহার করে সব সাবজেক্টের নাম আলাদাভাবে প্রিন্ট হবে। -->
+    <script>
+      let stujects = [
+        "Bangla",
+        "English",
+        "Mathmatics",
+        "Social Science",
+        "Islam",
+      ];
+      for (let subject of stujects) {
+        console.log(subject);
+      }
+    </script>
+
+    <!-- তোর একদম পছন্দের খাবারগুলোর নাম লেখ। এখন লুপ ব্যবহার করে প্রোগ্রাম লিখে দেখ, কীভাবে সব খাবারের নাম আলাদা আলাদা করে প্রিন্ট হবে।  -->
+    <script>
+      let favoriteFoods = ["Sweet", "Apple", "Orange", "Milk", "Biriyani"];
+      for (let favoriteFood of favoriteFoods) {
+        console.log(favoriteFood);
+      }
+    </script>
+
+    <!-- একটা অ্যারের মধ্যে তোর ফ্যামিলি মেম্বারদের জন্মসাল লিখে ফেল। তারপর লুপ চালিয়ে সবার জন্মসাল আউটপুট হিসেবে দেখা -->
+    <script>
+      let birthYears = [1985, 1994, 2018, 2019, 2023];
+      for (let birthYear of birthYears) {
+        console.log(birthYear);
+      }
+    </script>
+
+    <!-- ক্রিকেট বা ফুটবল খেলায় তোর প্রিয় একাদশের একটা টিম বানিয়ে তোর প্রিয় খেলোয়াড়দের নাম আউটপুট হিসেবে দেখবি -->
+    <script>
+      let playerNames = [
+        "S A Faroque",
+        "Khalilur Rahman",
+        "Masud Rana",
+        "Iqbalur Rahim",
+        "Sujan Sorma",
+        "Abdul Awal",
+        "Mizanur Rahman",
+        "Biplob Borua",
+        "Bijon",
+        "Kamal",
+        "Obaydul",
+      ];
+
+      for (let playerName of playerNames) {
+        console.log(playerName);
+      }
+    </script>
+
+    <!--  নেক্সট কবে কবে তোর পরীক্ষা আছে, সেই তারিখগুলো অ্যারের মধ্যে লিখে ফেল। তারপর লুপ ব্যবহার করে পরীক্ষার তারিখগুলো কনসোল লুপ কর।  -->
+    <script>
+      let examDates = [
+        "01-01-2026",
+        "01-01-2027",
+        "05-04-2027",
+        "05-04-2028",
+        "05-04-2030",
+      ];
+      for (let examDate of examDates) {
+        console.log(examDate);
+      }
+    </script>
+
+    <!-- while লুপ দিয়ে ১০ বার কনসোল লগ কর। আমি প্রতিদিন মিনিমাম 3 ঘন্টা করে প্রোগ্রামিং প্রাকটিস করব। -->
+    <script>
+      let practiceTimes = 0;
+      while (practiceTimes < 10) {
+        console.log(
+          "আমি প্রতিদিন মিনিমাম 3 ঘন্টা করে প্রোগ্রামিং প্রাকটিস করব।"
+        );
+        practiceTimes++;
+      }
+    </script>
+
+    <!-- তুই 1 থেকে 20 পর্যন্ত সংখ্যা লিখবি একটা While লুপ দিয়ে। -->
+    <script>
+      let numberStart = 1;
+      while (numberStart <= 20) {
+        console.log(numberStart);
+        numberStart++;
+      }
+    </script>
+
+    <!-- while লুপ দিয়ে 50 থেকে 100 পর্যন্ত সংখ্যা প্রিন্ট কর। -->
+    <script>
+      let numberForThisWhileLoop = 50;
+      while (numberForThisWhileLoop <= 100) {
+        console.log(numberForThisWhileLoop);
+        numberForThisWhileLoop++;
+      }
+    </script>
+
+    <!-- একটা while লুপ দিয়ে 1 থেকে 10 পর্যন্ত সংখ্যাগুলো প্রিন্ট করার সময় সংখ্যাগুলোকে 3 দিয়ে গুণ করে ফেলবি। তাহলে কিন্তু 3-এর নামতা হয়ে যাবে -->
+    <script>
+      let numberForNamotha = 1;
+      while (numberForNamotha <= 10) {
+        // console.log(" 3 x " + numberForNamotha + ' = ' + numberForNamotha * 3);
+        console.log(numberForNamotha * 3);
+        numberForNamotha++;
+      }
+    </script>
+
+    <!-- একটা while লুপ দিয়ে 101 থেকে 110 পর্যন্ত সংখ্যাগুলো প্রিন্ট করার সময় সংখ্যাগুলোকে 2 দিয়ে ভাগ করে ফেলবি -->
+    <script>
+      let numberForThisLoop = 101;
+      while (numberForThisLoop <= 110) {
+        console.log(numberForThisLoop * 2);
+        numberForThisLoop++;
+      }
+    </script>
+
+    <!-- while লুপ দিয়ে 50 থেকে 100 পর্যন্ত সংখ্যাগুলোর যোগফল বের কর। -->
+    <script>
+      let num = 50;
+      sum = 0;
+      while (num <= 100) {
+        sum = num + sum;
+        num++;
+      }
+      console.log(sum);
+    </script>
+
+    <!-- while লুপ দিয়ে 5 থেকে 15 পর্যন্ত সংখ্যাগুলোর যোগফল বের কর -->
+    <script>
+      let startNum = 5;
+      startSum = 0;
+      while (startNum <= 15) {
+        startSum = startNum + startSum;
+        startNum++;
+      }
+      // console.log('Total Sum of 5 to 15 is = ' + startSum);
+      console.log(startSum);
+    </script>
+
+    <!-- তুই এক স্কুলে 1 থেকে 50 পর্যন্ত ছাত্রদের রোল নাম্বার লিস্ট করবি, তারপর একটা while লুপ ব্যবহার করে সেই সংখ্যাগুলোর যোগফল বের কর। -->
+    <script>
+      let listOfRullNumber = 1;
+      sumOfRollNumber = 0;
+      while (listOfRullNumber <= 50) {
+        console.log("Roll No. is " + listOfRullNumber);
+        sumOfRollNumber = listOfRullNumber + sumOfRollNumber;
+        listOfRullNumber++;
+      }
+      console.log(sumOfRollNumber);
+    </script>
+
+    <!-- while লুপ ব্যবহার করে 21 থেকে 50 পর্যন্ত সংখ্যাগুলোর যোগফল বের কর এবং প্রতিবারের যোগফল দেখাবি -->
+    <script>
+      let startNUmberFrom = 21;
+      startSumFrom = 0;
+      while (startNUmberFrom <= 50) {
+        startSumFrom = startNUmberFrom + startSumFrom;
+        console.log(startSumFrom);
+        startNUmberFrom++;
+      }
+      console.log("Total sum is = " + startSumFrom);
+    </script>
+
+    <!-- 20 থেকে 40 পর্যন্ত সংখ্যাগুলোর যোগফল বের কর এবং শুধু ফাইনাল যোগফলটা আউটপুট হিসেবে দেখবি -->
+    <script>
+      let numberForThis = 20;
+      numberForSumForThis = 0;
+      while (numberForThis <= 40) {
+        numberForSumForThis = numberForThis + numberForSumForThis;
+        numberForThis++;
+      }
+      console.log(numberForSumForThis);
+    </script>
+  </body>
+</html>
