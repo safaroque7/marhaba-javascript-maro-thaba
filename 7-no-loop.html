@@ -177,5 +177,144 @@
       }
       console.log(numberForSumForThis);
     </script>
+
+    <!-- for লুপ দিয়ে 150 থেকে 170 পর্যন্ত সংখ্যা প্রিন্ট কর-->
+    <script>
+      for (let i = 150; i <= 170; i++) {
+        console.log(i);
+      }
+    </script>
+
+    <!-- তুই এক স্কুলে 31 থেকে 58 পর্যন্ত ছাত্রদের রোল নাম্বার লিস্ট করবি, তারপর একটা for লুপ ব্যবহার করে সেই সংখ্যাগুলোর যোগফল বের কর -->
+    <script>
+      let sumForRollNumber = 0;
+      for (let rollNumber = 31; rollNumber <= 58; rollNumber++) {
+        console.log(rollNumber);
+        sumForRollNumber = rollNumber + sumForRollNumber;
+      }
+      console.log("Total Sum of these numbers is = " + sumForRollNumber);
+    </script>
+
+    <!-- for লুপ দিয়ে 25 থেকে 75 পর্যন্ত সংখ্যাগুলোর যোগফল বের কর এবং যোগফল শেষে প্রিন্ট কর -->
+    <script>
+      let startingSum = 0;
+      for (let startingNumer = 25; startingNumer <= 75; startingNumer++) {
+        console.log(
+          startingNumer +
+            " + " +
+            startingSum +
+            " = " +
+            (startingNumer + startingSum)
+        );
+        startingSum = startingNumer + startingSum;
+      }
+    </script>
+
+    <!-- তোর কাজ হবে 20 থেকে 50 পর্যন্ত যে সকল সংখ্যা 7 দিয়ে বিভাজ্য, তা আউটপুট হিসেবে দেখা -->
+    <script>
+      for (let iNumber = 20; iNumber <= 50; iNumber++) {
+        if (iNumber % 7 === 0) {
+          console.log(iNumber);
+        }
+      }
+    </script>
+
+    <!-- এইবার 40 থেকে 80 পর্যন্ত যে সকল সংখ্যা 5 দিয়ে এবং 7 দিয়ে বিভাগ্য, তা আউটপুট হিসেবে দেখা -->
+    <script>
+      for (let iNumberForCheck = 40; iNumberForCheck <= 80; iNumberForCheck++) {
+        if (iNumberForCheck % 5 === 0 && iNumberForCheck % 7 === 0) {
+          console.log(iNumberForCheck);
+        }
+      }
+    </script>
+
+    <!-- এখন তোর প্রবলেম হলো 1 থেকে 40 পর্যন্ত যে সকল সংখ্যা 13 দিয়ে বিভাগ্য তাদের যোগফল কর।  -->
+    <script>
+      let startingNewNumber = 0;
+      for (let newNumber = 1; newNumber <= 40; newNumber++) {
+        if (newNumber % 13 === 0) {
+          startingNewNumber = newNumber + startingNewNumber;
+        }
+      }
+      console.log("Sum of Numbers is  = " + startingNewNumber);
+    </script>
+
+    <!-- for লুপ দিয়ে 1 থেকে 50 পর্যন্ত লুপ চালাবি। তবে লুপ চালানোর সময় লুপ ভেরিয়েবলের মান প্রত্যেকবার 4 করে বাড়াবি। -->
+    <script>
+      for (
+        let newInitiativeNumber = 1;
+        newInitiativeNumber <= 50;
+        newInitiativeNumber += 4
+      ) {
+        console.log(newInitiativeNumber);
+      }
+    </script>
+
+    <!-- 0 থেকে 100 পর্যন্ত সব সংখ্যাগুলো প্রিন্ট কর, যা 9 এবং 6 দিয়ে বিভাজ্য -->
+    <script>
+      for (let iNumberForThis = 0; iNumberForThis <= 100; iNumberForThis++) {
+        if (iNumberForThis % 9 === 0 && iNumberForThis % 6 === 0) {
+          console.log("Result is = " + iNumberForThis);
+        }
+      }
+    </script>
+
+    <!-- 1 থেকে 50 পর্যন্ত এমন সংখ্যাগুলো প্রিন্ট কর, যা 3 এবং 4 উভয়ের দ্বারা বিভাজ্য এবং সংখ্যাগুলোর যোগফল বের কর-->
+    <script>
+      let defaultSum = 0;
+      for (let newNumForthis = 1; newNumForthis <= 50; newNumForthis++) {
+        if (newNumForthis % 3 === 0 && newNumForthis % 4 === 0) {
+          defaultSum = newNumForthis + defaultSum;
+        }
+      }
+      console.log("New Result is = " + defaultSum);
+    </script>
+
+    <!-- ধর, তুই 1 থেকে 30 পর্যন্ত সংখ্যা প্রিন্ট করতে চাস, কিন্তু তোর ইচ্ছা হলো 15-এর পরে প্রিন্ট বন্ধ হবে, থেমে যাবে -->
+    <script>
+      for (let iStop = 1; iStop <= 30; iStop++) {
+        console.log(iStop);
+        if (iStop >= 15) {
+          break;
+        }
+      }
+    </script>
+
+    <!-- তুই 1 থেকে 40 পর্যন্ত সংখ্যা প্রিন্ট করতে চাস, কিন্তু এমনভাবে, যেন 7 দিয়ে বিভাজ্য সংখ্যাগুলো বাদ যায়। যেমন- 7, 14, 21 ইত্যাদি বাদ যাবে। একটা প্রোগ্রাম লিখ, যেখানে এই সংখ্যাগুলো স্কিপ হবে। -->
+    <script>
+      for (let newIni = 1; newIni <= 40; newIni++) {
+        if (newIni % 7 != 0) {
+          console.log("This number is not divided bt 7 " + newIni);
+        }
+      }
+    </script>
+
+    <!-- তুই 1 থেকে 15 পর্যন্ত সংখ্যা প্রিন্ট করতে চাস, কিন্তু 9 বাদে। একটা প্রোগ্রাম লিখ, যেখানে 9 স্কিপ হয়ে যাবে আর বাকিসব সংখ্যা প্রিন্ট হবে। -->
+    <script>
+      for (let nItem = 1; nItem <= 15; nItem++) {
+        if (nItem != 9) {
+          console.log("Result is = " + nItem);
+        }
+      }
+    </script>
+
+    <!-- 1 থেকে 20 পর্যন্ত সংখ্যা প্রিন্ট কর, কিন্তু 12 বাদে। 12 স্কিপ হয়ে যাবে এবং বাকিসব সংখ্যা প্রিন্ট হবে। -->
+    <script>
+      for (let newItem = 1; newItem <= 20; newItem++) {
+        if (newItem === 12) {
+          console.log(newItem);
+        }
+      }
+    </script>
+
+    <!-- 91 থেকে 120 পর্যন্ত সংখ্যা প্রিন্ট কর, কিন্তু 10 দিয়ে ভাগ যায়, এমন সংখ্যা পেলে প্রিন্ট করা বন্ধ হয়ে যাবে, থেমে যাবে। -->
+    <script>
+      for (let newItemNumber = 91; newItemNumber <= 120; newItemNumber++) {
+        console.log(newItemNumber);
+        if (newItemNumber % 10 === 0) {
+          break;
+        }
+      }
+    </script>
   </body>
 </html>
