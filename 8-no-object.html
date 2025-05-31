@@ -357,9 +357,51 @@
         pages: 500,
       };
 
-      // Object.seal(bookNew);
+      Object.seal(bookNew);
       bookNew["author"] = "BY Kawaling";
       console.log(bookNew);
+    </script>
+
+    <!-- একটা gadget অবজেক্ট বানা, যার মধ্যে name: "iPhone", price: 120000, আর color: "Black" থাকবে। delete ব্যবহার করে price ডিলিট কর। -->
+
+    <script>
+      const gadget = {
+        name: "iPhone",
+        price: 120000,
+        color: "Black",
+      };
+
+      delete gadget.price;
+
+      console.log(gadget);
+    </script>
+
+    <!-- একটা animal অবজেক্ট বানা, যার মধ্যে name:"Tiger", location:"Sundarban" থাকবে। এখন এমন কিছু কর, যাতে টাইগারের লোকেশন চেইঞ্জ করা না যায়। -->
+
+    <script>
+      const animalNew = {
+        name: "Tiger",
+        location: "Sundarban",
+      };
+
+      Object.seal(animalNew);
+      animalNew["location"] = "Sylhet";
+
+      console.log(animalNew);
+    </script>
+
+    <!-- const foodNew = { name: "Pizza", price: 500, size:"Large" }; এমন কিছু কর, যাতে food-এর মধ্যে নতুন প্রোপার্টি যোগ করা যাবে না। তবে চাইলে দাম বাড়ানো বা কমানো যাবে। -->
+    <script>
+      const foodNew = {
+        name: "Pizza",
+        price: 500,
+        size: "Large",
+      };
+
+      Object.seal(foodNew);
+      foodNew["price"] = 600;
+
+      console.log(foodNew);
     </script>
   </body>
 </html>
