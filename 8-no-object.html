@@ -315,5 +315,51 @@
         console.log(singleBuilding, ":", buildingNew[singleBuilding]);
       }
     </script>
+
+    <!-- ধর, তোর একটা headphone অবজেক্ট আছে, যার মধ্যে brand: "Sony", price: 3000, আর color: "red"। Object.freeze() মেথড ব্যবহার করে অবজেক্টটা freeze কর। এরপর আরেকটা নতুন প্রোপার্টি যোগ করতে চেষ্টা কর। দেখ, কাজ করে কিনা। -->
+
+    <script>
+      const headphone = {
+        brand: "Sony",
+        price: 3000,
+        color: "red",
+      };
+
+      Object.freeze(headphone);
+
+      (headphone.brand = "Samsung"), (headphone.price = 5000);
+
+      console.log(headphone);
+    </script>
+
+    <!-- const playerNew = { name: "Messi", goals: 800, club: "Inter Miami" }; Object.freeze() মেথড ব্যবহার করে অবজেক্ট ফ্রিজ কর। তারপর নতুন প্রোপার্টি যোগ করে দেখ, কাজ করে কি না।  -->
+
+    <script>
+      const playerNew = {
+        name: "Messi",
+        goals: 800,
+        club: "Inter Miami",
+      };
+      Object.freeze(playerNew);
+
+      playerNew["name"] = "Ronaldo";
+      playerNew["goals"] = 900;
+
+      console.log(playerNew);
+    </script>
+
+    <!-- const bookNew = {title: "Harry Potter", author: "JK Rowling", pages: 500}; Object.seal() ব্যবহার করে অবজেক্ট সিল কর। তারপর author প্রোপার্টি চেঞ্জ করে দেখ। -->
+
+    <script>
+      const bookNew = {
+        title: "Harry Potter",
+        author: "JK Rowling",
+        pages: 500,
+      };
+
+      // Object.seal(bookNew);
+      bookNew["author"] = "BY Kawaling";
+      console.log(bookNew);
+    </script>
   </body>
 </html>
