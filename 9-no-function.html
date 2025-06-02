@@ -1,81 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>9 No. Fucntion</title>
-  </head>
-  <body>
-    <!-- জুস খাও নামে একটা ফাংশন লিখ। যেটাকে কল করলে আউটপুট দিবে-- এই নাও লেবুর জুস। -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>9 No. Fucntion</title>
+</head>
+
+<body>
+  <!-- জুস খাও নামে একটা ফাংশন লিখ। যেটাকে কল করলে আউটপুট দিবে-- এই নাও লেবুর জুস। -->
+  <script>
+    function jushKhao() {
+      console.log("এই নাও লেবুর জুস।");
+    }
+    jushKhao();
+  </script>
+
+  <!-- এখন myRoutine নামে একটা ফাংশন লিখ। এইটার ভিতরে থাকবে, প্রতিদিন সকালে ঘুম থেকে উঠে তুই কী কী কাজ করস, সেগুলোর লিস্ট। একটা একটা করে কাজের নাম এক এক লাইনে কনসোল লগ দিয়ে লিখবি। -->
+  <script>
+    function myRoutine() {
+      console.log("I get up early in the morning.");
+      console.log("I go to washroom to take a shawer.");
+      console.log("I get ready to go to office.");
+    }
+
+    myRoutine();
+  </script>
+
+  <!-- তোর পরিবারের জন্য একটা ফাংশন লিখ। তুই যেকোনো একটা নাম দে। তারপর এইটার মধ্যে তোর যত পরিবারের সদস্য আছে, তাদের নাম এক এক করে আউটপুট করে দেখাবি। -->
+  <script>
+    function myFamily() {
+      console.log("S A Faroque");
+      console.log("Mitu Akter");
+      console.log("Nusaiba bint Faroque");
+      console.log("Fatiha bint Faroque");
+    }
+
+    myFamily();
+  </script>
+
+  <!-- একটা taskDone নামে ফাংশন লিখ। ফাংশনটাতে তোর সারাদিনের ৫টা কাজ একে লাইনে কনসোল লগ দিয়ে দেখা। -->
+  <script>
+    function taskDone() {
+      console.log("Task 1: I get up early in the morning.");
+      console.log("Task 2: I take breakfast.");
+      console.log("Task 3: I go to office.");
+      console.log("Task 4: I take lunch.");
+      console.log("Task 5: I come back to my home.");
+    }
+
+    taskDone();
+  </script>
+
+  <!-- greetMe নামে একটা ফাংশন লিখ। ফাংশন কল করলে আউটপুটে আসবে Good morning! Have a great day! -->
+  <script>
+    function greetMe() {
+      console.log("Good morning! Have a great day!");
+    }
+
+    greetMe();
+  </script>
+
+  <!-- তোর সবচেয়ে ক্লোজ তিন বন্ধুর নাম দেখানোর জন্য getFavFriends নামে ফাংশন লিখ। তারপর সেটার ভিতরে তোর ক্লোজ তিন বন্ধুর নাম আউটপুট হিসেবে দেখাবি। -->
+  <script>
+    function getFavFriends() {
+      console.log("Kamal, Obaydul, Hannan");
+    }
+    getFavFriends();
+  </script>
+
+  <!-- introduceMyself নামে ফাংশন লিখ। ফাংশন কল করলে তোর নাম, বয়স, ঠিকানা, ফোন নাম্বার, উচ্চতা আর তোর প্রিয় খাবার আউটপুট হিসেবে দেখা। -->
+  <script>
+    function introduceMyself() {
+      console.log(
+        "My name is S A Faroque. I am 40 years old. Basically I am from Brahmanbaria but I live in Dhaka. My phone number is 01915344418, height 5 feet 6 inchies. My favorite food is Haji biriyani."
+      );
+    }
+
+    introduceMyself();
+  </script>
+
+
+  <!-- পিতা ও পুত্রের বয়সের সমষ্টি বের করার একটা ফাংশন লেখ  -->
+  <script>
+    function totalAgeOfFatherandSon(a, b) {
+      const totalAge = a + b;
+      return totalAge;
+    }
+    const age = totalAgeOfFatherandSon(50, 15);
+    console.log(age);
+  </script>
+
+  <!-- তোর এক বন্ধু তোকে বলল ক্যালকুলেটর বানাতে, কিন্তু ক্যালকুলেটরে শুধু যোগ বা বিয়োগ করার অপশন থাকলে হবে না। একটা ফাংশন লিখ, যেখানে দুইটা সংখ্যার গুণ বের করে দেখাস। যেমন, যদি 20 আর 15 পাঠালে আউটপুট হবে 300 -->
+
+  <script>
+    function multificationResult(a, b){
+      const multiSum = a * b;
+      return multiSum;
+    }
+
+    const multiResult = multificationResult(20, 15);
+    console.log(multiResult);
+  </script>
+
+  <!-- একটা ফাংশন লিখ, যেটা তিনটা সাবজেক্টের পরীক্ষার মার্কসের সমষ্টি তোকে দিবে। -->
+   <script>
+    function totalMakrs (a, b, c, d, e, f){
+      const marks = a + b + c + d + e + f;
+      return marks;
+    }
+    const totalM = totalMakrs(5, 6, 7, 9, 50, 10);
+    console.log(totalM);
+   </script>
+
+   <!-- বয়স বের করার একটা ফাংশন লিখ। যেটাকে তুই তোর কোন বছর জন্ম, সেটা বলবি। তারপর ফাংশনের ভিতরে এই বছর থেকে তোর জন্মসাল বিয়োগ করলে তোকে বলবে, তুই কত বছর বুইড়া হইছস। মানে তোর বয়স কত হইছে। -->
     <script>
-      function jushKhao() {
-        console.log("এই নাও লেবুর জুস।");
+      function findAge(a, b){
+        const yourAge = a - b;
+        return yourAge;
       }
-      jushKhao();
+      const ageResult = findAge(2025, 1985);
+      console.log(ageResult);
     </script>
 
-    <!-- এখন myRoutine নামে একটা ফাংশন লিখ। এইটার ভিতরে থাকবে, প্রতিদিন সকালে ঘুম থেকে উঠে তুই কী কী কাজ করস, সেগুলোর লিস্ট। একটা একটা করে কাজের নাম এক এক লাইনে কনসোল লগ দিয়ে লিখবি। -->
+    <!-- তুই একটা দোকানে গেছিস, যেখানে প্রতিটি লাউ কেনার জন্য 35 টাকা লাগবে। এখন একটা ফাংশন লিখ, যা প্যারামিটার হিসেবে নিবে, তুই লাউয়ের জন্য কত টাকা দিতে চাস। তারপর ভাগ করে বলবে, তুই কয়টা লাউ কিনতে পারবি। -->
+
     <script>
-      function myRoutine() {
-        console.log("I get up early in the morning.");
-        console.log("I go to washroom to take a shawer.");
-        console.log("I get ready to go to office.");
+      function getGourd(a){
+        const totaLGourd = a / 35;
+        return totaLGourd;
       }
 
-      myRoutine();
+      const totalG =  Math.floor(getGourd(100));
+      console.log(totalG);
+      
     </script>
 
-    <!-- তোর পরিবারের জন্য একটা ফাংশন লিখ। তুই যেকোনো একটা নাম দে। তারপর এইটার মধ্যে তোর যত পরিবারের সদস্য আছে, তাদের নাম এক এক করে আউটপুট করে দেখাবি। -->
-    <script>
-      function myFamily() {
-        console.log("S A Faroque");
-        console.log("Mitu Akter");
-        console.log("Nusaiba bint Faroque");
-        console.log("Fatiha bint Faroque");
+    <!-- একটা ফাংশন লিখ, যেখানে চারটা সংখ্যার গড় বের করবে। -->
+     <script>
+      function averageNumber(a, b, c, d){
+        const averagePlus = a + b + c + d;
+        const getAveResult = averagePlus / 4;
+        return getAveResult;
       }
 
-      myFamily();
-    </script>
+      const totalAve = averageNumber(4, 9, 6, 1);
+      console.log(totalAve);
+      
 
-    <!-- একটা taskDone নামে ফাংশন লিখ। ফাংশনটাতে তোর সারাদিনের ৫টা কাজ একে লাইনে কনসোল লগ দিয়ে দেখা। -->
-    <script>
-      function taskDone() {
-        console.log("Task 1: I get up early in the morning.");
-        console.log("Task 2: I take breakfast.");
-        console.log("Task 3: I go to office.");
-        console.log("Task 4: I take lunch.");
-        console.log("Task 5: I come back to my home.");
-      }
+     </script>
 
-      taskDone();
-    </script>
 
-    <!-- greetMe নামে একটা ফাংশন লিখ। ফাংশন কল করলে আউটপুটে আসবে Good morning! Have a great day! -->
-    <script>
-      function greetMe() {
-        console.log("Good morning! Have a great day!");
-      }
+</body>
 
-      greetMe();
-    </script>
-
-    <!-- তোর সবচেয়ে ক্লোজ তিন বন্ধুর নাম দেখানোর জন্য getFavFriends নামে ফাংশন লিখ। তারপর সেটার ভিতরে তোর ক্লোজ তিন বন্ধুর নাম আউটপুট হিসেবে দেখাবি। -->
-    <script>
-      function getFavFriends() {
-        console.log("Kamal, Obaydul, Hannan");
-      }
-      getFavFriends();
-    </script>
-
-    <!-- introduceMyself নামে ফাংশন লিখ। ফাংশন কল করলে তোর নাম, বয়স, ঠিকানা, ফোন নাম্বার, উচ্চতা আর তোর প্রিয় খাবার আউটপুট হিসেবে দেখা। -->
-    <script>
-      function introduceMyself() {
-        console.log(
-          "My name is S A Faroque. I am 40 years old. Basically I am from Brahmanbaria but I live in Dhaka. My phone number is 01915344418, height 5 feet 6 inchies. My favorite food is Haji biriyani."
-        );
-      }
-
-      introduceMyself();
-    </script>
-  </body>
 </html>

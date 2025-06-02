@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plus</title>
+</head>
+
+<body>
+    <input type="number" name="" id="number" autofocus>
+    <input type="submit" value="Submit" id="submitButton">
+
+    <div id="showResult"></div>
+    <p> --------------------- </p>
+    <div id="plusResult">  </div>
+
+    <script>
+        let submitButton = document.getElementById("submitButton");
+        let numberStore = [];  // Move this outside the function to persist the values
+
+        submitButton.addEventListener("click", function () {
+            let number = document.getElementById("number").value;
+
+            // Store the number as a number, not a string
+            numberStore.push(Number(number));
+
+            // Create an unordered list to display the numbers
+            let ul = document.createElement('ul');
+
+            // Add each number to the list
+            for (let numberStoreItem of numberStore) {
+                let li = document.createElement('li');
+                li.innerText = numberStoreItem;
+                ul.appendChild(li);
+            }
+
+            // Calculate the sum of all stored numbers
+            let sum = 0;
+            for (let i = 0; i < numberStore.length; i++) {
+                sum += numberStore[i];  // Add the numbers together
+            }
+
+            // Append the list to the 'showResult' div
+            let showResult = document.getElementById("showResult");
+            showResult.innerHTML = "";  // Clear the existing list
+            showResult.appendChild(ul);
+
+            // Update the sum in the 'plusResult' div
+            let plusResult = document.getElementById("plusResult");
+            plusResult.innerText = sum;
+        });
+    </script>
+
+</body>
+
+</html>

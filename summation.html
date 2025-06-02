@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Summation </title>
+</head>
+
+<body>
+
+    <form action="">
+        <input type="number" name="number1" id="number1">
+        <input type="number" name="number2" id="number2">
+        <button type="submit" id="submitId"> Submit </button>
+        <h1 id="totalSummation"> </h1>
+        <h1 id="totalSummation2"> </h1>
+    </form>
+
+    <script>
+        document.getElementById("submitId").addEventListener('click', function(e) {
+        e.preventDefault();
+                let number1Value = parseFloat(document.getElementById("number1").value);
+                number2Value = parseFloat(document.getElementById("number2").value);
+                totalnumber = number1Value + number2Value;
+
+                document.getElementById("totalSummation").innerHTML = totalnumber;
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summation</title>
+</head>
+<body>
+
+    <form id="sumForm">
+        <input type="number" name="number1" id="number1">
+        <input type="number" name="number2" id="number2">
+        <button type="submit" id="submitId">Submit</button>
+        <h1 id="totalSummation"></h1>
+    </form>
+
+    <script>
+        document.getElementById("sumForm").addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent page refresh
+
+            let number1Value = parseFloat(document.getElementById("number1").value);
+            let number2Value = parseFloat(document.getElementById("number2").value);
+
+            let totalnumber = number1Value + number2Value;
+
+            document.getElementById("totalSummation").innerHTML = "Sum: " + totalnumber;
+        });
+    </script>
+
+</body>
+</html> -->
