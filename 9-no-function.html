@@ -146,9 +146,109 @@
 
       const totalAve = averageNumber(4, 9, 6, 1);
       console.log(totalAve);
-      
+     </script>
+
+
+     <!-- একজন দোকানদার প্রত্যেকটা আইটেমে 250 টাকা লাভ করে। একটা ফাংশন লিখ, যেখানে কোনো একটা জিনিসের কেনা দাম দিবি, তাহলে সে বিক্রির দাম (selling price) দিবে। -->
+
+     <script>
+      function sellingPrice(a){
+        const totalPrice = a + 250;
+        return totalPrice;
+      }
+
+      const totalSellingPrice = sellingPrice(300);
+      console.log('Selling Price is', totalSellingPrice);     
 
      </script>
+
+
+  <!-- একটা ফাংশন লিখ, তারপর সেই ফাংশনকে তোর জন্মসাল প্যারামিটার হিসেবে দিবি। তারপর সে বলে দিবে, কোন বছর তোর বয়স 100 বছর হবে। -->
+   <script>
+    function get100Years(a){
+      const year100 = a + 100;
+      return year100;
+    }
+
+
+    const full100Years = get100Years(1985);
+    console.log(full100Years);
+   </script>
+
+   <!-- একটা ফাংশন লিখ, যেখানে প্যারামিটার হিসেবে দিবি, প্রতিদিন তুই কয় ঘণ্টা সময় মোবাইল ফোন ইউজ করস। তারপর সেই ফাংশন বের করবে, মাসে তুই কত ঘণ্টা সময় মোবাইল ফোন ইউজ করস। ধরে নে, এক মাসে 30 দিন হয়। -->
+
+   <script>
+    function useMobilePhone(a){
+      const totalTimeInMonth = a * 30;
+      return totalTimeInMonth;
+    }
+    const usedPhoneTime = useMobilePhone(4);
+    console.log(usedPhoneTime);
+    
+   </script>
+
+   <!-- একটা ফাংশন লিখ, যাতে কোনো কন্ডিশনের ভিত্তিতে নাম্বার 10-এর বেশি হলে true রিটার্ন করবে, তআর না হলে false রিটার্ন করবে। -->
+    <script>
+      function getTrueFalse(number){
+        if(number > 10){
+          return true;
+        } else {
+          return false;
+        }
+      }
+      console.log(getTrueFalse(11));
+      console.log(getTrueFalse(8));
+    </script>
+
+    <!-- তুই একটা ফাংশন লিখ, যা সংখ্যা নিবে আর তারপর সেই সংখ্যা যদি 13 দিয়ে সমানভাবে ভাগ যায়, তাহলে true দিবে, না হয় false রিটার্ন দিবে। -->
+     <script>
+      function dividedBy13(number){
+        if( number % 13 === 0 ){
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      console.log(dividedBy13(13));
+      console.log(dividedBy13(26));
+
+     </script>
+
+     <!-- তুই একটা রেস্টুরেন্টে গিয়েছিস, সেখানে ভাত (rice), তারকারি (curry) আর ড্রিংকস (drinks) খাবি। একটা ফাংশন লিখ, যাতে খাবারের মোট দাম যোগ করে মোট বিল রিটার্ন করবে। -->
+      <script>
+        function totalBill(rice, curry, drinks){
+          const totalCost = rice + curry + drinks;
+          return totalCost;
+        }
+        console.log(totalBill(20, 50, 20));
+      </script>
+
+      <!-- এমন একটা ফাংশন বানা, যেখানে বয়স দিলে সেটি 18-এর বেশি হলে 'Eligible for Voting' রিটার্ন করবে, আর না হলে 'Not Eligible'। -->
+       <script>
+        function eligibleOrNot(age){
+          if( age > 18 ){
+            return 'Eligible for Voting';
+          } else {
+            return 'Not Eligible';
+          }
+        }
+        console.log(eligibleOrNot(19));
+        console.log(eligibleOrNot(15));
+        
+       </script>
+
+       <!-- একটা ফাংশন লিখ, যেখানে একটা ভেরিয়েবল স্টিং হিসেবে দিবি, আর সেটার দৈর্ঘ্য রিটার্ন করবে। -->
+        <script>
+          function getLength(a){
+              const totalLength = a.length;
+              return totalLength;
+          }
+          console.log(getLength('Dhaka'));
+          console.log(getLength('Bangladesh'));
+        </script>
+
+        <!--  -->
 
 
 </body>
