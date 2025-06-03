@@ -350,7 +350,22 @@
       }
 
       console.log(lastFuntion(10, 5));
-      
+    </script>
+
+    <!-- তোর এক বন্ধুর কাছে কিছু নাম্বার আছে; [5, 15, 8, 7]। ওর চাওয়া অনুযায়ী, শুধু বিজোড় সংখ্যাগুলোর যোগফল বের করে দে। এই কাজের জন্য একটা ফাংশন লিখে ফলাফলটা রিটার্ন কর। -->
+    <script>
+      function getSumOfOddNumbers(n) {
+        let sum = 0;
+        for (const number of n) {
+          if (number % 2 === 1) {
+            sum = sum + number;
+          }
+        }
+        return sum;
+      }
+
+      const numbersMore = [5, 3, 8, 15, 2];
+      console.log(getSumOfOddNumbers(numbersMore));
     </script>
   </body>
 </html>
