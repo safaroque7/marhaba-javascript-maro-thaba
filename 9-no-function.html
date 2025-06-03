@@ -302,5 +302,55 @@
       const getRst = arrySum([10, 15, 1]);
       console.log(getRst);
     </script>
+
+    <!--  একটা ফাংশন বানাবি, যেটা কোনো সংখ্যা n পাবে, আর সেই সংখ্যা দ্বিগুণ করে রিটার্ন করবে, যদি n পজিটিভ হয়। যদি n নেগেটিভ হয়, তাহলে তিনগুণ করে রিটার্ন করবে। -->
+    <script>
+      function twoOrThreeFolds(n) {
+        if (n > 0) {
+          const doubleFolds = n * 2;
+          return doubleFolds;
+        } else {
+          return (threeFolds = n * 3);
+          return threeFolds;
+        }
+      }
+
+      console.log(twoOrThreeFolds(5));
+      console.log(twoOrThreeFolds(-2));
+    </script>
+
+    <!-- তুই এমন একটা ফাংশন লিখবি, যা দুইটা নাম নিবে, প্রথম নাম আর দ্বিতীয় নাম। যদি প্রথম নামের দৈর্ঘ্য দ্বিতীয় নামের দৈঘ্যের চেয়ে বেশি হয়, তাহলে true রিটার্ন করবে, না হলে false। -->
+
+    <script>
+      function twoNames(name1, name2) {
+        const strName1 = name1.length;
+        strName2 = name2.length;
+
+        if (strName1 > strName2) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      console.log(twoNames("Faroque", "Kayum"));
+      console.log(twoNames("Kayum", "Faroque"));
+    </script>
+
+    <!-- তুই এমন একটা ফাংশন লিখ, যা দুইটি সংখ্যা নিবে এবং তাদের গুণফল রিটার্ন করবে। তবে, গুণফল 100-এর বেশি হলে শুধু তার অর্ধেক রিটার্ন করবে। -->
+
+    <script>
+      function lastFuntion(a, b) {
+        const totalMultiflication = a * b;
+        if (totalMultiflication > 100) {
+          const halfTotalMultiflication = totalMultiflication / 2;
+          return halfTotalMultiflication;
+        } else {
+          return totalMultiflication;
+        }
+      }
+
+      console.log(lastFuntion(10, 5));
+      
+    </script>
   </body>
 </html>
